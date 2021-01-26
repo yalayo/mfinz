@@ -19,6 +19,10 @@ jobs:
       - name: Install npm dependencies
         run: |
           npm install
+      - uses: DeLaGuardo/setup-clojure@master
+        with:
+          cli: '1.10.1.469'
+      - run: clojure -m figwheel.main -b android -r
       - name: Build Android Release
         run: |
           cd android && ./gradlew assembleRelease
