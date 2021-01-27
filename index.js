@@ -1,6 +1,6 @@
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import {npmDeps} from "./target/public/cljs-out/android/npm_deps.js";
+import {npmDeps} from "./npm_deps.js";
 
 // you can add other items to npmDeps here
 // npmDeps["./assets/logo.png"]= require("./assets/logo.png");
