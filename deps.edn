@@ -3,4 +3,5 @@
                          :exclusions [cljsjs/react cljsjs/react-dom]}
         re-frame/re-frame {:mvn/version "1.1.2"}
         com.bhauman/figwheel-main {:mvn/version "0.2.5"}}
- :paths ["src" "target"]}
+ :paths ["src" "target"]
+ :aliases {:min   {:main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "android"]}}}
