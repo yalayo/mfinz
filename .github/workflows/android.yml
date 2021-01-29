@@ -37,9 +37,9 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }}
       - uses: r0adkll/upload-google-play@v1
         with:
-          serviceAccountJsonPlainText: ${{ SERVICE_ACCOUNT_JSON }}
+          serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON }}
           packageName: com.mfinz
-          releaseFile: ${{ SIGNED_RELEASE_FILE}}
+          releaseFile: ${{ secrets.SIGNED_RELEASE_FILE}}
           track: production
           inAppUpdatePriority: 2
           userFraction: 0.33
