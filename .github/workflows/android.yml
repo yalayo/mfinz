@@ -42,4 +42,3 @@ jobs:
           releaseFiles: ${{ secrets.SIGNED_RELEASE_FILE}}
           track: internal
           inAppUpdatePriority: 2
-          userFraction: 1.0
